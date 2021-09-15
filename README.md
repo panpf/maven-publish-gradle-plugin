@@ -1,6 +1,6 @@
 # maven-publish-gradle-plugin
 
-based [vanniktech/gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) `0.16.0 (development) 4b3df71` version
+based [vanniktech/gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) `0.16.0 (03c04dfe)` version
 
 Gradle plugin that creates a `publish` task to automatically upload all of your Java, Kotlin or Android
 libraries to any Maven instance. This plugin is based on [Chris Banes initial implementation](https://github.com/chrisbanes/gradle-mvn-push)
