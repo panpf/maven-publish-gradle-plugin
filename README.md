@@ -1,6 +1,6 @@
 # maven-publish-gradle-plugin
 
-based [vanniktech/gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) `0.16.0 (03c04dfe)` version
+Based [vanniktech/gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) `0.17.0 (152697ff)` version. Add `disableAndroidJavaDocsAddReferencesLinks` configuration option to MavenPublishPluginExtension
 
 Gradle plugin that creates a `publish` task to automatically upload all of your Java, Kotlin or Android
 libraries to any Maven instance. This plugin is based on [Chris Banes initial implementation](https://github.com/chrisbanes/gradle-mvn-push)
