@@ -1,7 +1,6 @@
 package com.github.panpf.maven.publish
 
 import com.github.panpf.maven.publish.legacy.checkProperties
-import com.github.panpf.maven.publish.legacy.configureArchivesTasks
 import com.github.panpf.maven.publish.legacy.configureMavenCentral
 import com.github.panpf.maven.publish.legacy.configurePlatform
 import com.github.panpf.maven.publish.legacy.configurePom
@@ -22,7 +21,6 @@ open class MavenPublishPlugin : Plugin<Project> {
     p.checkProperties()
     p.configureMavenCentral()
     p.configureSigning()
-    p.configureArchivesTasks()
     p.configurePlatform()
   }
 }
