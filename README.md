@@ -36,7 +36,7 @@ buildscript {
 }
 
 plugins {
-    id("com.vanniktech.maven.publish")
+    id("com.github.panpf.maven.publish")
 }
 ```
 

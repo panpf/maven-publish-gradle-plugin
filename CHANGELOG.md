@@ -1,5 +1,16 @@
 # Change Log
 
+Version 0.18.0
+---------------------------------
+
+- The minimum supported Kotlin version is now `1.4.30`
+- It's now possible to specify `SONATYPE_HOST` as a Gradle property, e.g.
+    - `SONATYPE_HOST=S01` for `s01.sonatype.org`
+    - `SONATYPE_HOST=` to not add any repository by default
+- Fixed an issue when publishing Kotlin MPP projects with the base plugin
+- Removed checks for presence of properties that aren't used by this plugin anymore
+
+
 Version 0.17.0
 ---------------------------------
 
