@@ -4,7 +4,7 @@ plugins {
   id("kotlin-kapt")
   id("com.github.ben-manes.versions")
   id("org.jlleitschuh.gradle.ktlint")
-  id("com.vanniktech.maven.publish")
+  id("com.github.panpf.maven.publish")
 }
 
 ktlint {
