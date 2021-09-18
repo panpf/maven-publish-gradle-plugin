@@ -17,7 +17,7 @@ repositories {
 }
 
 
-java.sourceCompatibility = JavaVersion.VERSION_1_7
+java.sourceCompatibility = JavaVersion.VERSION_1_8
 
 // Use the kotlin version from the stdlib
 val kotlinVersion = KotlinVersion.CURRENT.toString()
