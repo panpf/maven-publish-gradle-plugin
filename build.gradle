@@ -1,0 +1,30 @@
+buildscript {
+    ext.kotlinVersion = '1.4.32'
+    ext.junitVersion = '4.13.2'
+    ext.assertjVersion = '3.19.0'
+    ext.agpVersion = '7.0.1'
+    ext.dokkaVersion = "1.4.32"
+    ext.retrofitVersion = '2.9.0'
+    ext.moshiVersion = '1.12.0'
+
+    repositories {
+        mavenCentral()
+        google()
+        gradlePluginPortal()
+        mavenLocal()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.38.0'
+        classpath "org.jlleitschuh.gradle:ktlint-gradle:10.0.0"
+        classpath 'io.github.panpf.maven-publish:maven-publish-gradle-plugin:0.18.0'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        google()
+    }
+}
