@@ -18,7 +18,7 @@ abstract class MavenPublishPluginExtension(
    *
    * @Since 0.15.0
    */
-  var sonatypeHost: SonatypeHost? = SonatypeHost.DEFAULT
+  var sonatypeHost: SonatypeHost? = defaultSonatypeHost()
 
   /**
    * The Android library variant that should be published. Projects not using any product flavors, that just want
@@ -43,4 +43,17 @@ abstract class MavenPublishPluginExtension(
    * @Since 0.16.0
    */
   var disableAndroidJavaDocsAddReferencesLinks: Boolean = false
+
+  private fun defaultSonatypeHost(): SonatypeHost? {
+    val property = project.findOptionalProperty("SONATYPE_HOST")
+    if (property != null) {
+      return if (property.isBlank()) {
+        null
+      } else {
+        SonatypeHost.valueOf(property)
+      }
+    }
+
+    return SonatypeHost.DEFAULT
+  }
 }
