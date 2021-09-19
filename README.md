@@ -104,7 +104,7 @@ kotlin:
 allprojects {
     plugins.withId("com.github.panpf.maven.publish") {
         configure<com.github.panpf.maven.publish.MavenPublishPluginExtension> {
-            sonatypeHost = "S01"
+            sonatypeHost = com.github.panpf.maven.publish.SonatypeHost.S01
         }
     }
 }
