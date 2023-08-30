@@ -1,3 +1,5 @@
+# Archived, the source library has fixed the problem of relying on android.com, there is no need to continue to exist
+
 # maven-publish-gradle-plugin
 
 Based [vanniktech/gradle-maven-publish-plugin](https://github.com/vanniktech/gradle-maven-publish-plugin) `0.18.0 (14c1891)` version. Add `disableAndroidJavaDocsAddReferencesLinks` configuration option to MavenPublishPluginExtension
